@@ -1,13 +1,55 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "muli", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.menu_active{
+  border-bottom: 1px solid rgb(22, 0, 56);
+  font-weight: bold;
+}
+.button{
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 30px;
+  transition: 0.5s;
+  background: aqua;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.button:hover{
+  background:black ;
+  color: aqua
+}
+#header{
+  margin-top: 90px;
+  width: 100%;
+}
+.header-img{
+  padding-left: 25px;
+  text-align: center;
+  border-radius: 30px;
+}
+.header-img .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translate(100px);
+  }
+  100% {
+    transform: translate(-100px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translate(100px);
+  }
+  100% {
+    transform: translate(-100px);
+  }
 }
